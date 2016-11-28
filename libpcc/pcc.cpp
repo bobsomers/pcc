@@ -1,4 +1,4 @@
-#include "pcc.h"
+#include <pcc/pcc.h>
 
 #include <iostream>
 

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 
+#include <pcc/pcc.h>
 #include <nanogui/nanogui.h>
 
 namespace ng = nanogui;
@@ -17,7 +18,7 @@ public:
     new ng::Label(window, "My Button", "sans-bold");
 
     ng::Button* button = new ng::Button(window, "The Button");
-    button->setCallback([] { std::cout << "The Button was pushed!\n"; });
+    button->setCallback([] { pcc::sayHello(); });
     button->setTooltip("Push me!");
 
     performLayout();
