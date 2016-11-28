@@ -1,0 +1,3 @@
+[submodule "curviz/nanogui"]
+	path = curviz/nanogui
+	url = https://github.com/wjakob/nanogui.git
